@@ -17,7 +17,7 @@ MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured r
 
 [Scalable Atomic Visibility with RAMP Transactions](http://people.eecs.berkeley.edu/~alig/papers/ramp.pdf)
 
-## Slightly weaker snapshot isolation levels (PSI, PC-PSI, NMSI)
+## Slightly weaker than snapshot isolation levels (PSI, PC-PSI, NMSI)
 
 Compared to snapshot isolation (SI) PSI, PC-PSI & NMSI allows "long fork" anomaly.
 
