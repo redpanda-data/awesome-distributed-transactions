@@ -23,6 +23,8 @@ MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured r
 
 Compared to snapshot isolation (SI) PSI, PC-PSI & NMSI allows "long fork" anomaly.
 
+[Database Replication Using Generalized Snapshot Isolation](file:///Users/rystsov/Downloads/srds2005-gsi.pdf)
+
 [Transactional storage for geo-replicated systems](http://www.news.cs.nyu.edu/~jinyang/pub/walter-sosp11.pdf) (aka Walter, PSI)
 
 [I Can’t Believe It’s Not Causal! Scalable Causal Consistency with No Slowdown Cascades](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/mehdi) (aka Occult, PC-PSI)
@@ -63,6 +65,12 @@ Independent transactions (aka one-shot transactions):
 
   * [Granola: Low-Overhead Distributed Transaction Coordination](https://www.usenix.org/system/files/conference/atc12/atc12-final118.pdf)
   * [Consolidating Concurrency Control and Consensus for Commits under Conflicts](https://www.usenix.org/system/files/conference/osdi16/osdi16-mu.pdf) (aka Janus, "Granola meets TAPIR")
+
+## Special hardware
+
+[The End of a Myth: Distributed Transactions Can Scale](http://www.vldb.org/pvldb/vol10/p685-zamanian.pdf/) (aka NAM-DB, SI)
+
+[No compromises: distributed transactions with consistency, availability, and performance](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/SOSP15-final227.pdf) (aka FaRM, serializability)
 
 ## Limits of distributed transactions
 
