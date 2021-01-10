@@ -72,6 +72,8 @@ Independent transactions (aka one-shot transactions):
 
 [No compromises: distributed transactions with consistency, availability, and performance](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/SOSP15-final227.pdf) (aka FaRM, serializability)
 
+[FaSST: Fast, Scalable and Simple Distributed Transactions with Two-Sided (RDMA) Datagram RPCs](https://www.usenix.org/system/files/conference/osdi16/osdi16-kalia.pdf)
+
 ## Limits of distributed transactions
 
 [The SNOW Theorem and Latency-Optimal Read-Only Transactions](https://www.usenix.org/system/files/conference/osdi16/osdi16-lu.pdf)
