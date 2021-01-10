@@ -68,6 +68,6 @@ Independent transactions (aka one-shot transactions):
     
 [Causal Consistency and Latency Optimality: Friend or Foe?](https://arxiv.org/abs/1803.04237)
 
-[Distributed Transactional Systems Cannot Be Fast](https://arxiv.org/abs/1903.09106#:~:text=We%20prove%20that%20no%20fully,the%20most%20frequent%20in%20practice).)
+[Distributed Transactional Systems Cannot Be Fast](https://arxiv.org/abs/1903.09106)
 
 [Distributed transactional reads: the strong, the quick, the fresh and the impossible](https://arxiv.org/abs/1810.01698)
