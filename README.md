@@ -23,7 +23,7 @@ MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured r
 
 Compared to snapshot isolation (SI) PSI, PC-PSI & NMSI allows "long fork" anomaly.
 
-[Database Replication Using Generalized Snapshot Isolation](file:///Users/rystsov/Downloads/srds2005-gsi.pdf)
+[Database Replication Using Generalized Snapshot Isolation](https://infoscience.epfl.ch/record/53561/files/srds2005-gsi.pdf)
 
 [Transactional storage for geo-replicated systems](http://www.news.cs.nyu.edu/~jinyang/pub/walter-sosp11.pdf) (aka Walter, PSI)
 
