@@ -3,7 +3,9 @@ A curated selection of distributed transactions protocols
 
 ## Highly Available Transactions
 
-### Causal transactions
+### Transactional Causal Consistency
+
+[Cure: Strong semantics meets high availability and low latency](https://hal.inria.fr/hal-01270776/document)
 
 [Stronger Semantics for Low-Latency Geo-Replicated Storage](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/lloyd) (aka Eiger)
 
