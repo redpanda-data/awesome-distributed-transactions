@@ -45,7 +45,7 @@ Let's put 2PC coordinator on Paxos:
   * [Increasing the Resilience of Distributed and Replicated Database Systems](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.48.3204&rank=1) (aka E3PC)
   * [Consensus on Transaction Commit](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.159.6749&rank=1) (aka paxos commit)
 
-Concurency control schemes:
+Concurrency control schemes:
 
   * [Extracting More Concurrency from Distributed Transactions](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-mu.pdf) (aka RoCoCo)
   * [An Evaluation of Distributed Concurrency Control](https://www.vldb.org/pvldb/vol10/p553-harding.pdf)
