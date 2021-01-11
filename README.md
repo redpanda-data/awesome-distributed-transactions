@@ -53,7 +53,7 @@ Concurrency control schemes:
 
 [CockroachDB: The Resilient Geo-Distributed SQL Database](https://dl.acm.org/doi/pdf/10.1145/3318464.3386134) (aka Parallel Commits)
 
-[Calvin: Fast Distributed Transactions for Partitioned Database Systems](http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf)
+[Calvin: Fast Distributed Transactions for Partitioned Database Systems](http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf) (deterministic transaction, OLLP)
 
 [Ocean Vista: Gossip-Based Visibility Control for Speedy Geo-Distributed Transactions](http://www.vldb.org/pvldb/vol12/p1471-fan.pdf)
 
@@ -73,6 +73,8 @@ Independent transactions (aka one-shot transactions):
 [No compromises: distributed transactions with consistency, availability, and performance](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/SOSP15-final227.pdf) (aka FaRM, serializability)
 
 [FaSST: Fast, Scalable and Simple Distributed Transactions with Two-Sided (RDMA) Datagram RPCs](https://www.usenix.org/system/files/conference/osdi16/osdi16-kalia.pdf)
+
+[Eris: Coordination-Free Consistent Transactions Using In-Network Concurrency Control](https://drkp.net/papers/eris-sosp17.pdf) (serializability, independent transactions, deterministic transaction, OLLP)
 
 ## Limits of distributed transactions
 
