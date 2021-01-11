@@ -11,6 +11,11 @@ A curated selection of distributed transactions protocols
 
 [Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COPS](https://www.cs.cornell.edu/courses/cs6452/2012sp/papers/cops-sosp11.pdf)
 
+### Two-Phase Commit (2PC) Protocol
+
+[[MySQL Cluster (NDB): A two-phase commit protocol that is non-blocking and distributed](https://content.logicalclocks.com/hubfs/Distributed%20Hierarchical%20File%20Systems%20strike%20back%20in%20the%20Cloud.pdf)
+
+
 ### Slightly better than read committed (MAV & RA)
 
 MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured reads.
