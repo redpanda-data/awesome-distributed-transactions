@@ -49,6 +49,8 @@ Let's put 2PC coordinator on Paxos:
 
 [CockroachDB: The Resilient Geo-Distributed SQL Database](https://dl.acm.org/doi/pdf/10.1145/3318464.3386134) (Parallel Commits over Paxos)
 
+[Spanner: Google’s Globally-Distributed Database](https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf) (2PC over Paxos)
+
 Concurrency control schemes:
 
   * [Extracting More Concurrency from Distributed Transactions](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-mu.pdf) (aka RoCoCo)
@@ -89,3 +91,7 @@ Blending of replication with transaction processing
 [Distributed Transactional Systems Cannot Be Fast](https://arxiv.org/abs/1903.09106)
 
 [Distributed transactional reads: the strong, the quick, the fresh and the impossible](https://arxiv.org/abs/1810.01698)
+
+## Testing
+
+[Elle: Inferring Isolation Anomalies from Experimental Observations](https://arxiv.org/abs/2003.10554)
