@@ -11,7 +11,7 @@ A curated selection of distributed transactions protocols
 
 [Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COPS](https://www.cs.cornell.edu/courses/cs6452/2012sp/papers/cops-sosp11.pdf)
 
-### Slightly better than read committed (MAV & RA)
+### Stronger than read committed (MAV & RA)
 
 MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured reads.
 
@@ -19,7 +19,7 @@ MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured r
 
 [Scalable Atomic Visibility with RAMP Transactions](http://people.eecs.berkeley.edu/~alig/papers/ramp.pdf)
 
-## Slightly weaker than snapshot isolation levels (PSI, PC-PSI, NMSI)
+## Weaker than snapshot isolation levels (PSI, PC-PSI, NMSI)
 
 Compared to snapshot isolation (SI) PSI, PC-PSI & NMSI allows "long fork" anomaly.
 
@@ -30,6 +30,8 @@ Compared to snapshot isolation (SI) PSI, PC-PSI & NMSI allows "long fork" anomal
 [I Can’t Believe It’s Not Causal! Scalable Causal Consistency with No Slowdown Cascades](https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/mehdi) (aka Occult, PC-PSI)
 
 [Non-Monotonic Snapshot Isolation](https://hal.inria.fr/hal-00643430v4/document) (aka Jessy, NMSI)
+
+[Blotter: Low Latency Transactions for Geo-Replicated Storage](https://www.gsd.inesc-id.pt/~rodrigo/blotter-www2017.pdf) (NMSI)
 
 ## Snapshot isolation
 
@@ -45,11 +47,17 @@ Let's put 2PC coordinator on Paxos:
   * [Increasing the Resilience of Distributed and Replicated Database Systems](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.48.3204&rank=1) (aka E3PC)
   * [Consensus on Transaction Commit](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.159.6749&rank=1) (aka paxos commit)
 
+[CockroachDB: The Resilient Geo-Distributed SQL Database](https://dl.acm.org/doi/pdf/10.1145/3318464.3386134) (Parallel Commits over Paxos)
+
 Concurrency control schemes:
 
   * [Extracting More Concurrency from Distributed Transactions](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-mu.pdf) (aka RoCoCo)
   * [An Evaluation of Distributed Concurrency Control](https://www.vldb.org/pvldb/vol10/p553-harding.pdf)
   * [Strong consistency is not hard to get: Two-Phase Locking and Two-Phase Commit on Thousands of Cores](https://www.vldb.org/pvldb/vol12/p2325-barthels.pdf)
+  * Independent transactions (aka one-shot transactions):
+
+    * [Granola: Low-Overhead Distributed Transaction Coordination](https://www.usenix.org/system/files/conference/atc12/atc12-final118.pdf)
+    * [Consolidating Concurrency Control and Consensus for Commits under Conflicts](https://www.usenix.org/system/files/conference/osdi16/osdi16-mu.pdf) (aka Janus)
 
 Deterministic ordering:
 
@@ -57,17 +65,10 @@ Deterministic ordering:
   * [SLOG: Serializable, Low-latency, Geo-replicated Transactions](http://www.vldb.org/pvldb/vol12/p1747-ren.pdf)
   * [Ocean Vista: Gossip-Based Visibility Control for Speedy Geo-Distributed Transactions](http://www.vldb.org/pvldb/vol12/p1471-fan.pdf)
 
-[CockroachDB: The Resilient Geo-Distributed SQL Database](https://dl.acm.org/doi/pdf/10.1145/3318464.3386134) (Parallel Commits over Paxos)
-
 Blending of replication with transaction processing
 
   * [Building Consistent Transactions with Inconsistent Replication](https://irenezhang.net/papers/tapir-sosp15.pdf) (aka TAPIR)
-  * [Meerkat: Multicore-Scalable Replicated Transactions Following the Zero-Coordination Principle](https://drkp.net/papers/meerkat-eurosys20.pdf) (supermajority-based fast path replication + timestamp ordering)
-
-Independent transactions (aka one-shot transactions):
-
-  * [Granola: Low-Overhead Distributed Transaction Coordination](https://www.usenix.org/system/files/conference/atc12/atc12-final118.pdf)
-  * [Consolidating Concurrency Control and Consensus for Commits under Conflicts](https://www.usenix.org/system/files/conference/osdi16/osdi16-mu.pdf) (aka Janus, "Granola meets TAPIR")
+  * [Meerkat: Multicore-Scalable Replicated Transactions Following the Zero-Coordination Principle](https://drkp.net/papers/meerkat-eurosys20.pdf)
 
 ## Special hardware
 
