@@ -51,15 +51,18 @@ Concurrency control schemes:
   * [An Evaluation of Distributed Concurrency Control](https://www.vldb.org/pvldb/vol10/p553-harding.pdf)
   * [Strong consistency is not hard to get: Two-Phase Locking and Two-Phase Commit on Thousands of Cores](https://www.vldb.org/pvldb/vol12/p2325-barthels.pdf)
 
-[CockroachDB: The Resilient Geo-Distributed SQL Database](https://dl.acm.org/doi/pdf/10.1145/3318464.3386134) (aka Parallel Commits)
+Deterministic ordering:
 
-[Calvin: Fast Distributed Transactions for Partitioned Database Systems](http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf) (deterministic transaction, OLLP)
+  * [Calvin: Fast Distributed Transactions for Partitioned Database Systems](http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf) (deterministic transaction, OLLP)
+  * [SLOG: Serializable, Low-latency, Geo-replicated Transactions](http://www.vldb.org/pvldb/vol12/p1747-ren.pdf)
+  * [Ocean Vista: Gossip-Based Visibility Control for Speedy Geo-Distributed Transactions](http://www.vldb.org/pvldb/vol12/p1471-fan.pdf)
 
-[Ocean Vista: Gossip-Based Visibility Control for Speedy Geo-Distributed Transactions](http://www.vldb.org/pvldb/vol12/p1471-fan.pdf)
+[CockroachDB: The Resilient Geo-Distributed SQL Database](https://dl.acm.org/doi/pdf/10.1145/3318464.3386134) (Parallel Commits over Paxos)
 
-[Building Consistent Transactions with Inconsistent Replication](https://irenezhang.net/papers/tapir-sosp15.pdf) (aka TAPIR)
+Blending of replication with transaction processing
 
-[SLOG: Serializable, Low-latency, Geo-replicated Transactions](http://www.vldb.org/pvldb/vol12/p1747-ren.pdf)
+  * [Building Consistent Transactions with Inconsistent Replication](https://irenezhang.net/papers/tapir-sosp15.pdf) (aka TAPIR)
+  * [Meerkat: Multicore-Scalable Replicated Transactions Following the Zero-Coordination Principle](https://drkp.net/papers/meerkat-eurosys20.pdf) (supermajority-based fast path replication + timestamp ordering)
 
 Independent transactions (aka one-shot transactions):
 
