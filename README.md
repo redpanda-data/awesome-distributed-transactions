@@ -95,3 +95,6 @@ Blending of replication with transaction processing
 ## Testing
 
 [Elle: Inferring Isolation Anomalies from Experimental Observations](https://arxiv.org/abs/2003.10554)
+
+## Sample implementations
+[Implementation of transaction manager (orchestrator) and client library in Go](https://github.com/paladium/cubequeue)
