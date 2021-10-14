@@ -60,9 +60,7 @@ Concurrency control schemes:
 
     * [Granola: Low-Overhead Distributed Transaction Coordination](https://www.usenix.org/system/files/conference/atc12/atc12-final118.pdf)
     * [Consolidating Concurrency Control and Consensus for Commits under Conflicts](https://www.usenix.org/system/files/conference/osdi16/osdi16-mu.pdf) (aka Janus)
-
-Single-threaded execution:
-* [The end of an Architectural Era: (It’s Time for a Complete Rewrite)](https://hstore.cs.brown.edu/papers/hstore-endofera.pdf) (aka H-Store)
+  * [The End of an Architectural Era: (It’s Time for a Complete Rewrite)](https://hstore.cs.brown.edu/papers/hstore-endofera.pdf) (serial execution, aka H-Store)
 
 Deterministic ordering:
 
