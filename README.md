@@ -12,7 +12,7 @@ A curated selection of distributed transactions protocols
 [Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COPS](https://www.cs.cornell.edu/courses/cs6452/2012sp/papers/cops-sosp11.pdf)
 
 ### Stronger than read committed (MAV & RA)
-
+n
 MAV provides "cut isolation" and atomicity. RA is MAV which prevents fractured reads.
 
 [Highly Available Transactions: Virtues and Limitations](https://www.vldb.org/pvldb/vol7/p181-bailis.pdf)
@@ -61,6 +61,9 @@ Concurrency control schemes:
     * [Granola: Low-Overhead Distributed Transaction Coordination](https://www.usenix.org/system/files/conference/atc12/atc12-final118.pdf)
     * [Consolidating Concurrency Control and Consensus for Commits under Conflicts](https://www.usenix.org/system/files/conference/osdi16/osdi16-mu.pdf) (aka Janus)
 
+Single-threaded execution:
+* [The end of an Architectural Era: (It’s Time for a Complete Rewrite)](https://hstore.cs.brown.edu/papers/hstore-endofera.pdf) (aka H-Store)
+
 Deterministic ordering:
 
   * [Calvin: Fast Distributed Transactions for Partitioned Database Systems](http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf) (deterministic transaction, OLLP)
@@ -85,7 +88,7 @@ Blending of replication with transaction processing
 ## Limits of distributed transactions
 
 [The SNOW Theorem and Latency-Optimal Read-Only Transactions](https://www.usenix.org/system/files/conference/osdi16/osdi16-lu.pdf)
-    
+
 [Causal Consistency and Latency Optimality: Friend or Foe?](https://arxiv.org/abs/1803.04237)
 
 [Distributed Transactional Systems Cannot Be Fast](https://arxiv.org/abs/1903.09106)
